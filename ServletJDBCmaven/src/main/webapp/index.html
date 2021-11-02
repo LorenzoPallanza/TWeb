@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prova di accesso a DB relazionale da servlet java</title>
+</head>
+<body>
+<div>Clicca il bottone per invocare HelloServlet e stampare i valore del Database.
+</div>
+<form action="/ServletJDBCmaven_war_exploded/jdbc-servlet" method="get">
+    <p><input type="submit" name="submit" value="OK"/></p>
+</form>
+Ecco l'invocazione con ancora:
+<a href="jdbc-servlet">Invoco Servlet</a>
+<hr>
+<form action="/ServletJDBCmaven_war_exploded/createQuery" method="get">
+    <p>Name:</p>
+    <input id="name" name="name" required >
+    <br>
+    <p>Surname: </p>
+    <input id="surname" name="surname" required >
+    <br>
+    <p>Register: </p>
+    <input id="register" name="register" required >
+    <p><input type="submit" name="submit" value="Invia dati"/></p>
+</form>
+</body>
+</html>

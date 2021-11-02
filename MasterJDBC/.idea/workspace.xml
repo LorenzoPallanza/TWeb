@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="baab01f0-603a-4d0e-a23d-5bb8d8f51514" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QoqNoikUjy71ON2rOP7Ms6S6qH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553181530580" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MySQLExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MySQLExample" />
+      <module name="MasterJDBC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MySQLExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="baab01f0-603a-4d0e-a23d-5bb8d8f51514" name="Default Changelist" comment="" />
+      <created>1552480788506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552480788506</updated>
+      <workItem from="1552480793396" duration="5947000" />
+      <workItem from="1552513937598" duration="128000" />
+      <workItem from="1552554864993" duration="23000" />
+      <workItem from="1553071184155" duration="923000" />
+      <workItem from="1553179282275" duration="1205000" />
+      <workItem from="1553588680593" duration="28000" />
+      <workItem from="1568447260734" duration="2979000" />
+      <workItem from="1568797009789" duration="674000" />
+      <workItem from="1569832158286" duration="2357000" />
+      <workItem from="1569935157016" duration="1714000" />
+      <workItem from="1570000269173" duration="593000" />
+      <workItem from="1570170979406" duration="1413000" />
+      <workItem from="1570874945969" duration="2869000" />
+      <workItem from="1571144652210" duration="3219000" />
+      <workItem from="1571151205205" duration="589000" />
+      <workItem from="1571388923146" duration="596000" />
+      <workItem from="1571415567620" duration="7000" />
+      <workItem from="1601140146084" duration="1247000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1446" height="103" key="GridCell.Tab.0.bottom" timestamp="1601141520851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1446" height="103" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601141520851" />
+    <state width="1446" height="103" key="GridCell.Tab.0.center" timestamp="1601141520835">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1446" height="103" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601141520835" />
+    <state width="1446" height="103" key="GridCell.Tab.0.left" timestamp="1601141520835">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1446" height="103" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601141520835" />
+    <state width="1446" height="103" key="GridCell.Tab.0.right" timestamp="1601141520835">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1446" height="103" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601141520835" />
+    <state x="119" y="0" key="SettingsEditor" timestamp="1601140770392">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="119" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601140770392" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

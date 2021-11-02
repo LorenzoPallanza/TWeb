@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cognome" type="xs:string"/>
+                <xs:element name="nome" type="xs:string"/>
+                <xs:element name="soprannome" type="xs:string" minOccurs="0"/>
+                <xs:element name="indirizzi" type="IndirizziType" />
+            </xs:sequence>
+            <xs:attribute name="genere" type="MFType" default="F"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="IndirizziType">
+        <xs:sequence>
+            <xs:element name="indirizzo" type="IndirizzoType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="MFType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="M"/>
+            <xs:enumeration value="F"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="IndirizzoType">
+        <xs:sequence>
+            <xs:element name="citta" type="xs:string"/>
+            <xs:element name="via" type="xs:string"/>
+            <xs:element name="numero" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

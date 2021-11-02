@@ -1,0 +1,57 @@
+header {
+    width:100%;
+    background:yellow;
+    font-size:140%;
+    font-style:bold;
+}
+
+.h1class {
+    padding:.2em 0 .2em 1em;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:135%;
+    color:red;
+}
+
+.h2class {
+    padding:.2em 0 .2em 1em;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:110%;
+    color:orange;
+}
+
+.normalText {
+    padding:.2em 0 .2em 1em;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:100%;
+    color:green;
+}
+
+body nav { /* link di navigazione principali nella pagina */
+    float:left;
+    width:20%;
+}
+article {
+    float:left;
+    width:50%;
+    border: solid black;
+}
+aside {
+    float:right;
+}
+footer {
+    width:100%;
+    font-size:110%;
+    font-style:bold;
+    margin:2em;
+    padding:1em;
+    clear: both;
+}
+
+#info {
+    float:right;
+    width:40%;
+}
+
+a:hover {background-color: yellow;}
+
+th, td {border: solid 1px black;}
