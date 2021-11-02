@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova cambio stato</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function cambiaStatus(nuovo) {
+            window.status = nuovo;
+            }
+        </script>
+    </head>
+    <body>
+        <p>Prova listeners</p>
+        <a href="http://java.sun.com" onMouseOver="window.status = 'Sito ufficiale Java';
+           " onMouseOut="cambiaStatus('prova')">java.sun.com</a>
+        </br>
+        <a href="http://www.microsoft.com" onMouseOver="window.status = 'Sito ufficiale
+                    Microsoft'; return true;" onMouseOut="window.status = ''">www.microsoft.com</a>
+        </br>
+        <a href="http://www.w3.org" onMouseOver="window.status = 'Sito ufficiale World
+                    Wide Web Consortium'; return true;" onMouseOut="window.status = ''">www.w3.org</a>
+    </body>
+</html>

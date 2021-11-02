@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova functions JavaScript</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function somma(a, b) { /* Funzione che restituisce un 
+             valore e puo` lanciare eccezioni */
+                if (typeof a !== 'number' || typeof b !== 'number') {
+                    throw {// creo oggetto eccezione di tipo name e messaggio message
+                        name: 'TypeError',
+                        message: 'type mismatch error'
+                    }
+                }
+                var s = a + b; // s e' variabile locale (dichiarata con var)
+                return s;
+            }
+
+            function gestisciSomma(par1, par2) {
+                var ris = 0;
+                try {
+                    ris = somma(par1, par2);
+                } catch (e) {
+                    document.writeln(e.name + ": " + e.message + "</br>");
+                    return "Valore indefinito";
+                }
+                return ris;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Prova functions</h1>
+        La somma di 10 e 34 &egrave
+        <script language="JavaScript">
+            risultato = gestisciSomma(10, 34);
+            document.write(risultato);
+        </script>
+        </br>
+        La somma di "errore" e "grave" &egrave
+        <script language="JavaScript">
+            risultato = gestisciSomma("errore", "grave");
+            document.write(risultato);
+        </script>
+    </body>
+</html>
+
+

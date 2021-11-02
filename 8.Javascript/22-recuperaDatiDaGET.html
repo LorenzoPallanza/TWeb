@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Visualizzazione dati JSON</title>
+        <script type="text/javascript">
+            function parseGetVars()
+            {
+                // creo una array
+                var args = new Array();
+                // individuo la query (cioè tutto quello che sta a destra del ?)
+                // per farlo uso il metodo substring della proprietà search
+                // dell'oggetto location
+                var query = window.location.search.substring(1);
+                // se c'è una querystring procedo alla sua analisi
+                if (query)
+                {
+                    // divido la querystring in blocchi sulla base del carattere &
+                    // (il carattere & è usato per concatenare i diversi parametri della URL)
+                    var strList = query.split('&');
+                    // faccio un ciclo per leggere i blocchi individuati nella querystring
+                    for (str in strList)
+                    {
+                        // divido ogni blocco mediante il simbolo uguale
+                        // (uguale è usato per l'assegnazione del valore)
+                        var parts = strList[str].split('=');
+                        // inserisco nella array args l'accoppiata nome = valore di ciascun
+                        // parametro presente nella querystring
+                        args[unescape(parts[0])] = unescape(parts[1]);
+                    }
+                }
+                return args;
+            }</script>
+    </head>
+    <body>
+        <h1>Hello World!!</h1>
+        <p> Ora analizziamo i dati di info1 con JavaScript</p>
+        <script language="JavaScript">
+            var get = parseGetVars();
+            //var attr = get['info1'];
+            document.write(get['info1']);
+        </script>
+    </body>
+</html>

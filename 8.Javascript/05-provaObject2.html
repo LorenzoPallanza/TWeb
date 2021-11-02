@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova creazione oggetto</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function creaPersona(nom, cogn, v, num, com) {
+                var ogg = {}; // creo oggetto vuoto
+                ogg = {
+                    nome: nom,
+                    cognome: cogn,
+                    indirizzo: {
+                        via: v,
+                        numero: num,
+                        comune: com
+                    }
+                }
+                return ogg;
+            }
+
+            function visualizza(persona) {
+                document.write(persona.nome + " ");
+                document.write(persona.cognome + "; ");
+                //if (persona.indirizzo!==undefined) {
+                if (persona.hasOwnProperty("indirizzo")) { // il controllo è solo un esempio; non serve...
+                    document.write(persona.indirizzo.via + " " + persona.indirizzo.numero +
+                            ", " + persona.indirizzo.comune);
+                } else {
+                    document.write("dati incompleti");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Creiamo un oggetto e visualizziamo a video con function </h1>
+            </br>
+            <script language="JavaScript">
+                var gigi = creaPersona("Gigi", "Neri", "Roma", 5, "Torino");
+                visualizza(gigi);
+            </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova modifica pagina</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script language="JavaScript">
+            function myFunction() {
+                var x = document.getElementById("cambia");  // Find the element
+                //x.innerHTML = "Modificato!";    // Change the content
+                x.innerHTML = "<table><caption>Didascalia</caption><tr>"  +
+                        "<th>col1</th>  <th>col2</th>  <th>col3</th></tr>" +
+                        "<tr><td> v11</td>  <td>v12</td>  <td>v13</td></tr>" + 
+                        "<tr><td> v21</td>  <td>v22</td>  <td>v23</td></tr></table>"
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Schiaccia il bottone per modificare il contenuto di questa pagina</h1>
+        <p id="cambia">
+            Elemento "cambia" della pagina: ora contiene queste parole...
+        </p>
+        <button type="button" onclick="myFunction()">Clicca per modificare "cambia"</button>
+        </br>
+        <script>
+            document.write("Contenuto originale di CAMBIA: " + document.getElementById("cambia").innerHTML);
+        </script>
+    </body>
+</html>

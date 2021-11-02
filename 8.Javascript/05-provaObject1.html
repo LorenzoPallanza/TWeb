@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova creazione oggetto</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Creiamo un oggetto e visualizziamone il contenuto su browser</h1>
+        <script language="JavaScript">
+            // creo oggetto (object literal)
+            var mario = {
+                "nome": "Mario",
+                "cognome": "Rossi"
+            };
+            // visualizziamo a video le proprietà dell'oggetto
+            document.write(mario.nome + " ");
+            document.write(mario["cognome"] + "</br>");
+
+            // modifico proprietà dell'oggetto
+            mario.nome = "MarioNew";
+            document.write("Dopo la modifica " + mario.nome + " ");
+            document.write(mario["cognome"] + "</br>");
+            // verifico se l'oggetto ha determinate proprietà
+            document.write("ha nome: " + mario.hasOwnProperty("nome") + "</br>");
+            document.write("ha soprannome: " + mario.hasOwnProperty("soprannome"));
+            document.write("</br> soprannome: " + mario.soprannome + "</br>");
+        </script>
+        </br>
+    </script>

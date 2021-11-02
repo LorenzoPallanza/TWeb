@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova di definizione classi</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function Rettangolo(altezza, larghezza) { // NB: verificare il tipo dell'input!
+                this.altezza = altezza;
+                this.larghezza = larghezza;
+                this.getArea = function () {
+                    return this.altezza * this.larghezza;
+                }
+                this.toString = function () {
+                    return "Rettangolo: " + this.altezza + "x" + this.larghezza;
+                }
+                this.compareTo = function (r) {
+                    return this.getArea() - r.getArea();
+                }
+
+            } // end class
+            // AGGIUNGO LE SEGUENTI DICHIARAZIONI PER I METODI, IN MODO DA ASSOCIARE I METODI AL SOLO
+            // PROTOTIPO E NON AD OGNI SINGOLO OGGETTO DI TIPO RETTANGOLO CHE VERRA' CREATO
+            Rettangolo.prototype.getArea = getArea;
+            Rettangolo.prototype.toString = toString;
+            Rettangolo.prototype.compareTo = compareTo;
+        </script>
+    </head>
+    <body>
+        <script language="JavaScript">
+            var r1 = new Rettangolo(5, 4);
+            document.write(r1.toString() + "</br>");
+            document.write("area: " + r1.getArea() + "</br>");
+
+            var r2 = new Rettangolo(6, 8);
+            document.write(r2.toString() + "</br>");
+            document.write("area: " + r2.getArea() + "</br>");
+            document.write("r1 compareTo r2: " + r1.compareTo(r2));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova functions JavaScript</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function somma(add1, add2)  /* Esempio di funzione che restituisce un valore */
+            {
+                if (typeof add1 !== 'number' || typeof add2 !== 'number')
+                    return -1;
+                else
+                    return add1 + add2;
+            }
+
+            function esponenziale(base, esp) { /*  base^esp */
+                var ris = 1;
+                if (typeof base !== 'number' || typeof esp !== 'number')
+                    return -1;
+                else {
+                    for (i = 0; i < esp; i++) {
+                        ris = ris * base;
+                    }
+                    return ris;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Prova functions</h1>
+        La somma di 10 e 34 &egrave
+        <script language="JavaScript">
+            risultato = somma(10, 34);
+            //risultato = somma(10, "34");
+            document.write(risultato + "</br>");
+            // introduciamo un errore di tipo che faccia fallire l'operazione....
+        </script>
+        </br>
+        Il risultato di 2 elevato a 3 &egrave
+        <script language="JavaScript">
+            risultato = esponenziale(2, 3);
+            document.write(risultato);
+        </script>
+        </br>
+        <script language="JavaScript">
+            risultato = somma("errore", "errore");
+            document.write(risultato);
+        </script>
+        </br>
+        <script language="JavaScript">
+            risultato = esponenziale("errore", "errore");
+            document.write(risultato);
+        </script>
+    </body>
+</html>

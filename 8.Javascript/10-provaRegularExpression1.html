@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova espressioni regolari</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function regExprCheck(stringa, pattern) { // verifica se stringa rispetta il pattern
+                var re = new RegExp(pattern);
+                return(re.test(stringa));
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Prova espressioni regolari</h1>
+        <p> NB: per limitare il numero di variabili globali dello script
+            creo una sola globale, oggetto complesso, che racchiude le
+            variabili che mi servono.
+        </p>
+        <script language="JavaScript">
+            var mioInput = {}; // creo oggetto vuoto
+            mioInput.pattern = "0-4";
+            mioInput.pattern = /\d/g;
+            mioInput.pattern = "Ciao";
+            //mioInput.pattern = "[a-d]";
+            //mioInput.pattern = "[a-zA-Z]";
+            //mioInput.pattern = "[a-zA-Z0-9]";
+            mioInput.input0 = "187";
+            mioInput.input1 = "Ciao mondo";
+            mioInput.input2 = "alfa999";
+            mioInput.input3 = "accccbcaa";
+            document.write("Controllo pattern " + mioInput.pattern + "</br>" +
+                    mioInput.input0 + ": " + regExprCheck(mioInput.input0, mioInput.pattern) + "; </br>" +
+                    mioInput.input1 + ": " + regExprCheck(mioInput.input1, mioInput.pattern) + "; </br>" +
+                    mioInput.input2 + ": " + regExprCheck(mioInput.input2, mioInput.pattern) + "; </br>" +
+                    mioInput.input3 + ": " + regExprCheck(mioInput.input3, mioInput.pattern) + "; </br>");
+        </script>
+    </body>
+</html>

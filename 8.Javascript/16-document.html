@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript" >
+            function refreshDocument() {
+                document.open();
+                document.write("<html>");
+                document.write("<head>");
+                document.write("<title>Nuovo documento</title>");
+                document.write("</head>");
+                document.write("<body>");
+                document.write("<h1>Ciao</h1>");
+                document.write("</body>");
+                document.write("</html>");
+                document.close();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>L'oggetto document</h1>
+        <hr/>
+        <input type="button" value="Riscrivi la pagina web" onclick="refreshDocument()" />
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PROVA FORM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function verifica(modulo) {
+                /* Controlla la presenza dei campi nome e e-mail
+                 Notare uso di === per verifica di uguaglianza. Parzialmente obsoleto:
+                 normalmente ora si usano i comandi di HTML5 per imporre vincoli sul contenuto
+                 delle form. Se pero' si dovessero controllare dati specifici (per esempio
+                 un pattern da rispettare) allora il controllo javascript sarebbe utile perche'
+                 permetterebbe di usare le regular expression per verificare che l'input sia corretto.
+                 */
+                if (document.getElementById("campoNome").value === "") {
+                    alert("Campo -nome- mancante");
+                    modulo.nome.focus(); // sposta il focus sull'elemento
+                    return false;
+                }
+                if (modulo.email.value === "") {
+                    alert("Campo -email- mancante");
+                    modulo.email.focus();
+                    return false;
+                }
+                var g = modulo.giorno.value;
+                var m = modulo.mese.value;
+                var a = modulo.anno.value;
+                var errore = false;
+                // controlla la correttezza della data (utile se tolgo i controlli HTML5)
+                if ((g < 1) || (g > 31))
+                    errore = true;
+                if ((m < 1) || (m > 12))
+                    errore = true;
+                if (a < 1850)
+                    errore = true;
+                if (errore === true) {
+                    alert("Errore nella data di nascita");
+                    modulo.giorno.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Inserisci i tuoi dati </h1>
+        <form action="richiesta.jsp" name="dati" onSubmit="return verifica(this);" method="post">
+            <p>
+                Nome: <input type="text" id="campoNome" name="nome" size="30" />
+            </p>
+            <p>
+                E-mail: <input id="email" type="email" name="emaddr" value="user@domain.com"/>
+            </p>
+            <p>
+                Data di nascita (gg mm aaaa):
+                <input id="giorno" type="number" name="giorno" value="1" min="1" max="31"/>
+                <input id="mese" type="number" name="mese" value="1" min="1" max="12" />
+                <input id="anno" type="number" name="anno" value="2016" min="2014" />
+            </p>
+            <input type="submit" value="Invia">
+        </form>
+    </body>
+</html>

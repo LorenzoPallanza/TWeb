@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova creazione oggetto</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function creaPersona(nom, cogn, v, num, com) {
+                var ogg = {}; // creo oggetto vuoto
+                ogg = {
+                    nome: nom,
+                    cognome: cogn,
+                    indirizzo: {
+                        via: v,
+                        numero: num,
+                        comune: com
+                    },
+                    toString: function () {
+                        var contenuto = this.nome + " " + this.cognome + "; ";
+                        //if (this.indirizzo!==undefined) {
+                        if (this.hasOwnProperty("indirizzo")) { // qui di fatto non serve
+                            contenuto = contenuto + " via " + this.indirizzo.via + " " +
+                                    this.indirizzo.numero + ", " + this.indirizzo.comune;
+                        } else {
+                            contenuto = "dati incompleti";
+                        }
+                        return contenuto;
+                    }
+                }
+                return ogg;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1> Creo oggetto e visualizzo a video con function </h1>
+        </br>
+        <script language="JavaScript">
+            var gigi = creaPersona("Gigi", "Neri", "Roma", 6, "Torino");
+            document.write("Indirizzi: </br>");
+            document.write(gigi.toString() + "</br>");
+            // cambio il valore di una property dell'oggetto
+            gigi.indirizzo.via = "Marittima";
+            document.write(gigi); // toString() invocato automaticamente
+            var studente = {
+                nome: "Marcello Rossi",
+                eta: 21,
+                matricola: "20A3456",
+                facolta: 'Giurisprudenza',
+                esami: ['Diritto civile', 'Diritto privato'],
+                getInformazioni: function () {
+                    return this.nome + ' ' + this.eta + ' ' + this.matricola + ' ' + this.facolta + ' ' + this.esami[0]
+                }
+            }
+            studente.nome = "Giovanni Neri";
+            document.write("</br>" + studente + "(manca il toString()!!)");
+            document.write("</br>" + studente.nome);
+        </script>
+
+    </body>
+</html>

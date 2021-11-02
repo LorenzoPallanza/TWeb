@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prova data odierna con function JavaScript</title>
+  <script language="JavaScript">
+	function mostraData() {
+		var oggi = new Date();
+		var giorno = oggi.getDate();
+		var mese = oggi.getMonth() + 1;
+		var anno = oggi.getFullYear();
+                document.write(giorno, "/", mese, "/", anno, "</br");
+	}
+  </script>
+</head>
+
+<body>
+<h1>Prova data</h1>
+<p>
+La data odierna e':
+<script language="JavaScript">
+	document.write(mostraData());
+</script>
+</p>
+<p> Ciao! </p>
+</body>
+</html>

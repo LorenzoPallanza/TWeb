@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script language="JavaScript">
+            var auto = '{ "marca": "Audi", "modello": "A4", "colore": "Nero" }';
+            var a = JSON.parse(auto);
+            document.write("Auto (oggetto semplice): " + a.marca + ", " + a.modello + "<br><br>");
+
+            var dati = '{"employees":[' +
+                    '{"firstName":"John","lastName":"Doe" },' +
+                    '{"firstName":"Anna","lastName":"Smith" },' +
+                    '{"firstName":"Robert","lastName":"Green" },' +
+                    '{"firstName":"Peter","lastName":"Jones" }]}';
+
+            var jsonData = JSON.parse(dati);
+            document.write("Dati (lista di oggetti employee):<br>")
+            for (var i = 0; i < jsonData.employees.length; i++) {
+                var counter = jsonData.employees[i];
+                document.write(counter.firstName + " " + counter.lastName + "<br>");
+            }
+        </script>
+    </body>
+</html>
